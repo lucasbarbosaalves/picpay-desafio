@@ -1,0 +1,31 @@
+# Picpay Desafio
+
+###
+# @name POST User
+POST http://localhost:8081/users
+Content-Type: application/json
+
+{
+  "name": "Lucas",
+  "document": "111.222.333-44",
+  "email": "lucas@teste.com",
+  "password": "123",
+  "userType": "MERCHANT",
+  "balance": 1000.0
+}
+
+###
+# @name GET Users
+GET http://localhost:8081/users
+
+###
+# @name POST Transaction
+POST http://localhost:8081/transactions
+Content-Type: application/json
+
+{
+  "amount" : 100.00,
+  "payerId" : 1,
+  "payeeId" : 2
+
+}
