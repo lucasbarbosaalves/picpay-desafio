@@ -31,4 +31,17 @@ public class User {
     private UserType userType;
 
     private BigDecimal balance;
+
+    public User() {
+    }
+
+    public User(UserDTO dto) {
+
+        this.name = dto.name();
+        this.document = dto.document();
+        this.email = dto.email();
+        this.password = dto.password();
+        this.userType = dto.userType();
+        this.balance = dto.balance();
+    }
 }
