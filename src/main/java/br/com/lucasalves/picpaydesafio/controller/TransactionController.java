@@ -3,7 +3,6 @@ package br.com.lucasalves.picpaydesafio.controller;
 import br.com.lucasalves.picpaydesafio.domain.transaction.Transaction;
 import br.com.lucasalves.picpaydesafio.domain.transaction.TransactionDTO;
 import br.com.lucasalves.picpaydesafio.service.TransactionService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +19,6 @@ public class TransactionController {
     public TransactionController() {
     }
 
-    @Autowired
     public TransactionController(TransactionService service) {
         this.service = service;
     }

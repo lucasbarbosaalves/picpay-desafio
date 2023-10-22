@@ -4,7 +4,6 @@ package br.com.lucasalves.picpaydesafio.controller;
 import br.com.lucasalves.picpaydesafio.domain.user.User;
 import br.com.lucasalves.picpaydesafio.domain.user.UserDTO;
 import br.com.lucasalves.picpaydesafio.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +18,6 @@ public class UserController {
 
     public UserController() {
     }
-    @Autowired
     public UserController(UserService service) {
         this.service = service;
     }

@@ -4,7 +4,6 @@ import br.com.lucasalves.picpaydesafio.domain.user.User;
 import br.com.lucasalves.picpaydesafio.domain.user.UserType;
 import br.com.lucasalves.picpaydesafio.domain.user.UserDTO;
 import br.com.lucasalves.picpaydesafio.repositories.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -18,7 +17,6 @@ public class UserService {
     public UserService() {
     }
 
-    @Autowired
     public UserService(UserRepository repository) {
         this.repository = repository;
     }

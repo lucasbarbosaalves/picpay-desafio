@@ -4,7 +4,6 @@ package br.com.lucasalves.picpaydesafio.service;
 import br.com.lucasalves.picpaydesafio.domain.transaction.Transaction;
 import br.com.lucasalves.picpaydesafio.domain.transaction.TransactionDTO;
 import br.com.lucasalves.picpaydesafio.repositories.TransactionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -25,7 +24,7 @@ public class TransactionService {
 
     public TransactionService() {
     }
-    @Autowired
+
     public TransactionService(TransactionRepository repository, UserService userService, RestTemplate restTemplate, NotificationService notificationService) {
         this.repository = repository;
         this.userService = userService;
